@@ -1,8 +1,19 @@
+:root {
+  /* Color Variables */
+  --bg-white: #ffffff;
+  --skin-color: var(--skin-color);
+  --shirt-blue: var(--shirt-blue);
+  --shirt-blue-dark: var(--shirt-blue-dark);
+  --hair-dark: var(--hair-dark);
+  --hair-shadow: var(--hair-shadow);
+  --eyes-black: var(--eyes-black);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  background: #ffffff;
+  background: var(--bg-white);
 }
 
 .pos {
@@ -40,8 +51,8 @@ body {
   top: 72%;
   width: 6px;
   height: 10px;
-  background: #ce9470;
-  box-shadow: inset 0px 6px 0px 0px #ce9470;
+  background: var(--skin-color);
+  box-shadow: inset 0px 6px 0px 0px var(--skin-color);
 }
 
 .me-body:before,
@@ -51,7 +62,7 @@ body {
 }
 
 .me-body:before {
-  background: #ce9470;
+  background: var(--skin-color);
   width: 6px;
   height: 6px;
   border-radius: 10px;
@@ -62,12 +73,12 @@ body {
 .me-body:after {
   width: 26px;
   height: 15px;
-  background: #6485ef;
+  background: var(--shirt-blue);
   border-radius: 20px 20px 0px 0px;
   top: 7px;
   z-index: 0;
   left: -9px;
-  box-shadow: inset 4px 0px 0px #5f7ee1;
+  box-shadow: inset 4px 0px 0px var(--shirt-blue-dark);
 }
 
 .me-ponytail {
@@ -82,7 +93,7 @@ body {
   content: "";
   width: 10px;
   height: 20px;
-  background: #1e110c;
+  background: var(--hair-dark);
   top: 20px;
   left: -20px;
   border-radius: 0px 100px 0px 100px;
@@ -94,7 +105,7 @@ body {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  background: #ce9470;
+  background: var(--skin-color);
   border-radius: 100px;
   height: 50px;
   width: 40px;
@@ -107,7 +118,7 @@ body {
   left: 0px;
   width: 16px;
   height: 26px;
-  background: #1e110c;
+  background: var(--hair-dark);
   position: absolute;
   border-radius: 1px 10px 0px 10px;
   transform: rotate(53deg);
@@ -129,7 +140,7 @@ body {
   top: 44%;
   width: 55px;
   height: 50px;
-  background: #1e110c;
+  background: var(--hair-dark);
   border-radius: 80px;
 }
 
@@ -140,7 +151,7 @@ body {
   top: 28px;
   width: 10px;
   height: 13px;
-  background: #ce9470;
+  background: var(--skin-color);
   position: absolute;
   border-radius: 5px;
 }
@@ -162,11 +173,11 @@ body {
   position: absolute;
   height: 36px;
   width: 10px;
-  background: #1e110c;
+  background: var(--hair-dark);
   left: -27px;
   top: -12px;
   border-radius: 24px 0px 0px 24px;
-  box-shadow: inset 2px -4px 0px #100906;
+  box-shadow: inset 2px -4px 0px var(--hair-shadow);
 }
 
 .me-bangs:after {
@@ -192,7 +203,7 @@ body {
 .me-face .eyes:after {
   width: 4px;
   height: 15px;
-  background: #000;
+  background: var(--eyes-black);
   position: absolute;
   content: "";
   left: -10px;
